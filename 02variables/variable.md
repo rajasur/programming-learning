@@ -27,10 +27,11 @@ func main() {
 	fmt.Println(smallValue)
 	fmt.Printf("Type: %T", smallValue)
 
-	//Valueran
+	//walrus
 	smallFloat := 2345.118765
 	print(smallFloat)
 	fmt.Printf("Type: %T", smallFloat)
 
 }
-``` 
+```
+- If we use first letter as a capital letter during variable declaration, It is consider as a private variable in Go. 

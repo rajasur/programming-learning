@@ -13,7 +13,7 @@ func main() {
 	fmt.Println(smallValue)
 	fmt.Printf("Type: %T", smallValue)
 
-	//Valueran
+	//walrus operator i.e :=
 	smallFloat := 2345.118765
 	print(smallFloat)
 	fmt.Printf("Type: %T", smallFloat)
