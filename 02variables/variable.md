@@ -11,7 +11,7 @@ var a int //Declaration <br>
 a=10 // Intialization <br>
 var a int = 10 // Declaration & Intialization
 - Example:
-```
+```go
 package main
 
 import (
