@@ -23,6 +23,13 @@ func main() {
 	var username string = "Raja"
 	var isLoggedIn bool = true
 
+	//inferred type declaration
+	var paerson_age = 30 // Type is inferred as int
+	var isAdult = true
+	// Printing the values
+	fmt.Println("Person Age is:", paerson_age)
+	fmt.Println("Is Adult:", isAdult)
+
 	// Printing variables and their types
 	fmt.Println("Username:", username)
 	fmt.Printf("Variable type: %T\n", username)
