@@ -164,6 +164,29 @@ func main() {
 }
 ```
 
+
+## Variable Declaration in `if` with Multiple Conditions
+
+```go
+func main() {
+    if age :=20; age >= 18 {
+        fmt.Println("person is an adult", age)
+    } else if age >= 12 {
+        fmt.Println("person is teenager",age)
+    }
+}
+```
+
+Key points:
+- Variable `age` is declared and initialized in the `if` statement
+- The variable scope is limited to the `if-else` blocks
+- Multiple conditions can be checked using `else if`
+- The value can be used within all blocks
+
+Output:
+```
+person is an adult 20
+```
 ---
 
 ## Conclusion
