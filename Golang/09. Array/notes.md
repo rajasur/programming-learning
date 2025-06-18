@@ -138,6 +138,11 @@ You can declare arrays with more than one dimension.
 var matrix [2][3]int = [2][3]int{
     {1, 2, 3},
     {4, 5, 6},
+
+nums := [2][2]int {
+    {3,4},
+    {5,6},
+}
 }
 ```
 
