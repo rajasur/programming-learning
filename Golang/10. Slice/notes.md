@@ -167,3 +167,25 @@ slice = append(slice, 6) // Capacity doubles
 slice := []int{1, 2, 3}
 fmt.Println(slice[5]) // Runtime panic
 ```
+
+## Built-in copy Function
+
+The `copy` function is a built-in function that copies elements from a source slice to a destination slice:
+
+```go
+func copy(dst, src []Type) int
+```
+
+### Example with copy
+```go
+source := []int{1, 2, 3, 4}
+dest := make([]int, 2)
+copy(dest, source)
+fmt.Println(dest)    // [1, 2]
+fmt.Println(source)  // 2 (number of elements copied)
+```
+
+Notes:
+- Returns number of elements copied
+- Copies minimum of len(dst) or len(src) elements
+- Safe for overlapping slices
