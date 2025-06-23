@@ -7,6 +7,7 @@ import (
 
 // order struct
 
+// This is created for struct embedding.
 type customer struct {
 	name  string
 	phone string
@@ -18,7 +19,7 @@ type order struct {
 	amount    float32
 	status    string
 	createdAt time.Time // nanosecond precision
-	customer
+	customer // struct embedding
 }
 
 // func newOrder(id string, amount float32, status string) *order {
