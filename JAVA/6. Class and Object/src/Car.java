@@ -22,7 +22,6 @@ public class Car {
     public void drive() {
         if (currentFuelInLiters == 0) {
             System.out.println("Cannot drive, fuel tank is empty.");
-            return;
         } else if (currentFuelInLiters < 5) {
             System.out.println("Warning: Low fuel level. Please refuel soon.");
             currentFuelInLiters--;
