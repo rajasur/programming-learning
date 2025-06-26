@@ -6,6 +6,18 @@ public class Car {
     float currentFuelInLiters;
     int noOfSeats;
 
+    // Default constructor
+    Car(String color) {
+        this.noOfWheels = 4;
+        this.color = color;
+        this.maxSpeed = 120.0f;
+        this.currentFuelInLiters = 50.0f;
+        this.noOfSeats = 5;
+    }
+    // Constructor Chaining
+    Car() {
+        this("Black");
+    }
     //Instance methods
     public void drive() {
         if (currentFuelInLiters == 0) {
