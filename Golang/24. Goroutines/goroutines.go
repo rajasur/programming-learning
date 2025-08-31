@@ -13,6 +13,7 @@ func main() {
 	for i := 0; i <= 10; i++ {
 		// go task(i) // Start a goroutine for each task
 
+		// closure function with goroutine
 		go func(i int) {
 			fmt.Println("doing task", i)
 		}(i) // Use an anonymous function to capture the loop variable
